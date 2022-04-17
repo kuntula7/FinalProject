@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    width: 100%;
+}
+h2{
+    width: 100%;
+    color: blue;
+    text-align: center;
+}
+p{
+    font-size: 10px;
+    text-align: center
+}
+a{
+    color:black
+}

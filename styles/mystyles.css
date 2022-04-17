@@ -1,0 +1,1098 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/*index.html*/
+@font-face {
+    font-family: beqa;
+    src: url(../Fonts/IndieFlower-Regular.ttf);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 156, 1);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 0 0 20% 20%;
+    scroll-behavior: unset;
+}
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.mobile-container {
+    width: 320px;
+    color: white;
+    margin-left: 2px;
+    height: 30px;
+    position: relative;
+}
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 320px;
+    
+}
+.java{
+    position: absolute;
+    top: 1;
+    left: 0;
+}
+.topnav #myLinks {
+    display: none;
+}
+.topnav a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0px 5px 2px;
+    font-weight: bold;
+    transition: border-bottom 2s;
+}
+.topnav a:hover {
+    color: white;
+    border-bottom: 1px solid black;
+}
+.topnav #myLinks ul{
+    display: flex;
+    flex-direction: row;
+}
+.iconi{
+    padding: 0px!important;
+}
+h1{
+    font-family: beqa;
+    margin-bottom: 5px;
+}
+@-webkit-keyframes animacia{
+    0%{color: black;}
+    25%{color: rgb(22, 3, 105);}
+    50%{color: rgb(0, 255, 64);}
+    75%{color: rgb(255, 187, 0);}
+    100%{color: rgb(0, 0, 0);}
+}
+@keyframes animacia{
+    0%{color: black;}
+    25%{color: rgb(22, 3, 105);}
+    50%{color: rgb(0, 255, 64);}
+    75%{color: rgb(255, 187, 0);}
+    100%{color: rgb(0, 0, 0);}
+}
+.h1{
+    color:black;
+    font-size: 64px;
+    -webkit-animation-name: animacia;
+            animation-name: animacia;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.fa-search{
+    cursor: pointer;
+}
+form input{
+    padding: 5px 2px;
+}
+.fa-sign-in{
+    color: rgb(3, 3, 3);
+}
+.fa-sign-in:hover{
+    color: white;
+}
+.reg{
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.icn{
+    width:0px;
+    height: 0px;
+    position: fixed;
+    right: 0;
+    top: 200px;
+    z-index: 80;
+}
+.fb{
+    background-image: url(../img/facebook\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    width:20px;
+    height: 20px;
+    margin-left: -7px;
+}  
+.fb:hover{
+    background-image: url(../img/facebook\ 2.png);
+}
+.inst{
+    background-image: url(../img/instagram\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    top: 270px;
+    text-indent: -333px;
+    width:20px;
+    height: 20px;
+}
+.inst:hover{
+    background-image: url(../img/instagram\ 2.png);
+}
+.twitter{
+    background-image: url(../img/twitter\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    top: 290px;
+    text-indent: -333px;
+    width:20px;
+    height: 20px;
+}
+.twitter:hover{
+    background-image: url(../img/twitter\ 2.png);
+}
+.youtube{
+    background-image: url(../img/youtube\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    top: 310px;
+    text-indent: -333px;
+    width:20px;
+    height: 20px;
+}
+.youtube:hover{
+    background-image: url(../img/youtube\ 2.png);
+}
+main{
+    background-color: rgba(128, 128, 128, 0.356);
+    display: flex;
+    flex-direction: column;
+    
+}
+.mtavari{
+    width: 95%;
+    background-color:#a1a193;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 103px;
+
+}
+h2 a{
+    color: black;
+}
+h2 a:hover{
+    color: white;
+}
+.swiffy-slider{
+    width: 95%;
+}
+.slider-container{
+    margin-top: 5px;
+}
+.slide-visible{
+    width: 100%;
+    height: 230px;
+    position: relative;
+    transition: background-size 5s;
+}
+.slide-visible:hover{
+    background-size: 110%;
+}
+.slaideristxt{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(32, 30, 30, 0.753);
+}
+.slaideristxt .badge,.text-muted{
+    color: rgb(255, 255, 255)!important;
+}
+.news1{
+    height: 230px;
+    border-radius: 5%;
+    background-image: url(../img/news1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.news2{
+    height: 230px;
+    background-image: url(../img/news2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.news3{
+    height: 230px;
+    background-image: url(../img/news3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.stadioni{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.stadioni2:hover{
+    border: 2px solid black;
+}
+.stadioni2{
+    width: 300px;
+    height: 181px;
+    background-image: url(../img/field.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    z-index: 1;
+}
+.motamasheebi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.col-sm-2{
+    height: 100%;
+    width: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sxva{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.players{
+    -webkit-filter: grayscale();
+            filter: grayscale();
+    width: 37px;
+    height: 36px;
+    margin-bottom: 7px;
+}
+.players:hover{
+    -webkit-filter: none;
+            filter: none;
+}
+.goalkeeper{
+    background-image: url(../img/goalkeeper.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.defender{
+    background-image: url(../img/football-player\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+}
+.midfielder{
+    background-image: url(../img/football-player\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+}
+.forward{
+    background-image: url(../img/football-player\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+}
+
+footer{
+    background-color:#9A0000 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-inline li a{
+    color: black;
+    margin-left: 23px;
+    transition: border-bottom 1s;
+}
+li:hover a{
+    color: white;
+    border-bottom: 1px solid black;
+}
+/*reg.html*/
+.regbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#registracia{
+    max-width: 500px;
+    background-color: rgb(121, 173, 106);
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#registracia input{
+    width: 50%;
+    margin: 3px 125px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s linear 0s;
+}
+#registracia input:hover{
+    border-bottom: 2px solid black;
+}
+.erovneba{
+    margin: 0px!important;
+}
+p .rig{
+    text-align: center;
+}
+#registracia label.bday{
+    width: 150px!important;
+    margin: 0 auto!important;
+}
+#registracia select{
+    margin: -29px 40% 5px 40%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s linear 0s;
+}
+#registracia select:hover{
+    border-bottom: 2px solid black;
+}
+form input[type="submit"]{
+    background-color: rgb(249, 255, 249);
+}
+/*reg2.html*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    width: 92%;
+    height: 600px;
+    background-image: url(../img/pitch.webp);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position-y: center;
+    margin-top: 100px;
+}
+.box{
+    margin-top: 10px;
+    width: 300px;
+    height: 70px;
+    background: rgb(136, 136, 136);
+    border:  2px solid rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden; 
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width:100%;
+    height:0%;
+    background: green;
+    ;
+    z-index: 1;
+    transition: 0.8s;
+}
+
+.box1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.box1:hover::before{
+    height: 180%;
+}
+.box:hover p{
+    color: rgb(3, 3, 3);
+    z-index: 100;
+}
+.type{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(7, 7, 7);
+    position: relative;
+    overflow: hidden;
+}
+.type::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width:100%;
+    height:0%;
+    background: green;
+    ;
+    z-index: 1;
+    transition: 0.8s;
+}
+
+.type1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.type1:hover::before{
+    height: 180%;
+    z-index: 1;
+}
+.box:hover .type1{
+    z-index: 100;
+}
+.main .box .type a p{
+    color: rgb(3, 3, 3);
+    font-size: 24px;
+    transition: color 10s;
+    z-index: 100;
+}
+
+/*avreg.html*/
+.avtoreg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avreg{
+    margin-top: 100px;
+    padding: 50px;
+    border: 2px solid black;
+}
+.avreg ul li{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avreg ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s, color 1s;
+}
+.avreg ul li a:hover{
+    color: rgb(21, 255, 0);
+    border-bottom: 1px solid black;
+}
+.font{
+    padding: 10px;
+}
+/*login.html*/
+.robot{
+    width: 130px!important;
+    text-align: center;
+    font-size: 18px;
+}
+.ukan{
+    margin-top: 20px;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.ukan:hover{
+    border-bottom: 1px solid black;
+}
+.ukan:visited{
+    color: rgb(0, 0, 0);
+}
+/*news.html*/
+.newsi{
+    width: 95%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(243, 243, 243);
+    justify-content: center;
+    padding: 10px 30px;
+    
+}
+.imigi{
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+.surati{
+    max-width: 100%;
+
+}
+.shida{
+    width: 100%;
+}
+.siaxle{
+    font-size:24px ;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.newstext::first-letter{
+    color: Blue;
+    font-size: 18px;
+}
+.atributi{
+    width: 100%;
+    margin-top: 15px;
+}
+.atribut ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.atribut ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.atribut ul li p{
+    font-family: font-2,Verdana,sans-serif;
+    font-size: 13px;
+    line-height: 27px
+}
+.newsi .ukan p{
+    width: 110px;
+    font-size: 8px;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 5px;
+}
+.newsi .ukan p:hover{
+    border-bottom: 1px solid black;
+}
+.newsi .ukan:visited{
+    color: rgb(0, 0, 0);
+}
+/*siaxleebi.html*/
+.mshobeli{
+    width: 94%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(18, 11, 117);
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.col-sm-4{
+    background-color: aliceblue;
+    width: 610px;
+    height: 500px;
+    margin: 3px;
+    border-radius: 0 0 5% 5%;
+    border: 1px grey;
+    padding: 7px;
+    overflow: hidden;
+}
+.col-sm-4 a{
+    color: black;
+}
+.col-sm-4 span{
+    color:grey;
+}
+.col-sm-4 .shvili{
+    width: 100%;
+    height: 100%;
+}
+.col-sm-4 .shvili  .xazi p{
+    font-size: 14px;
+}
+.col-sm-4:hover p{
+    font-weight: bold;
+}
+.col-sm-4 p{
+    padding: 7px;
+}
+.shvilishvili{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    background-image: url(../img/news1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 2s;
+}
+.col-sm-4:hover .shvilishvili{
+    background-size: 110%;
+}
+::-webkit-scrollbar{
+    width:12px
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(22, 2, 97);
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border: 1px solid black;
+}
+/*goalkeeper.html*/
+.goalkeeper1{
+    -webkit-filter: none;
+            filter: none;
+}
+.profili{
+    width: 95%;
+    background-color: #a1a193;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.col-sm-3{
+    width: 30.33%;
+    height: 450px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.profilissurati{
+    width: 100%;
+    height: 70%;
+}
+.shtegen{
+    background-image: url(../img/marc.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.degea{
+    background-image: url(../img/degea.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.alisson{
+    background-image: url(../img/alisson.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.neuer{
+    background-image: url(../img/neuer.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.messi{
+    background-image: url(../img/messi.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.ronaldo{
+    background-image: url(../img/ronaldo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.profilisnaxva{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s;
+}
+.profilissurati .profilisnaxva a{
+    color: rgba(0, 0, 0, 0);
+    transition: color 2s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilisnaxva:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.profilissurati:hover a{
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+.col-sm-3  h2{
+    font-family: 'beqa';
+}
+.shidaprofili{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+    border-top: 1px solid black;
+    padding: 3px;
+}
+/*defender.html*/
+.left{
+    -webkit-filter: none;
+            filter: none;
+}
+.alba{
+    background-image: url(../img/alba.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.alonso{
+    background-image: url(../img/alonso.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.teo{
+    background-image: url(../img/theo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.cancelo{
+    background-image: url(../img/cancelo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*midfielder.html*/
+.mid1{
+    -webkit-filter: none;
+            filter: none;
+}
+.pedri{
+    background-image: url(../img/pedri.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*forward.html*/
+.forward1{
+    -webkit-filter: none;
+            filter: none;
+}
+.messi{
+    background-image: url(../img/messi.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.ronaldo{
+    background-image: url(../img/ronaldo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.torres{
+    background-image: url(../img/torres.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*about.html*/
+.mainabout{
+    width: 89%;
+    margin-top: 121px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.about{
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+}
+.partners{
+    margin-top: 20px;
+}
+/*contact.html*/
+pre{
+    display: inline-block;
+}
+.address{
+    padding-bottom: 2px;
+    margin-bottom: 7px;
+    border-bottom: 2px solid black;
+}
+.phone{
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+.fb2{
+    filter: grayscale();
+}  
+.fb2:hover{
+    filter: none;
+}
+.inst2{
+    filter: grayscale();
+}  
+.inst2:hover{
+    filter: none;
+}
+.twitter2{
+    filter: grayscale();
+}  
+.twitter2:hover{
+    filter: none;
+}
+.message{
+    border-bottom: 2px solid black;
+}
+
+.social{
+    width: 22%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 450px
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+#map {
+    height: 500px;
+  }
+@media screen and (max-width:1250px) {
+    .main{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:982px) {
+    .topnav #myLinks ul{
+        flex-direction: column;
+    }
+    .mobile-container{
+        width: 140px;
+        height: 97px;
+    }
+    .topnav{
+        width: 140px;
+        height: 97px;
+    }
+}
+@media screen and (max-width:942px) {
+    .mobile-container{
+        width: 140px;
+        height: 97px;
+    }
+    .topnav{
+        width: 140px;
+        height: 97px;
+    }
+    .topnav #myLinks{
+
+        padding-left:10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .players{
+        width: 25px;
+        height: 25px;
+    }
+    .col-sm-2{
+        padding: 11px 0;
+    }
+}
+@media screen and (max-width:729px) {
+
+    nav{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .reg{
+        margin-top: 5px;
+    }
+    .newsi{
+        margin-top: 270px;
+        width: 94%;
+    }
+    .mtavari{
+        margin-top: 260px;
+        width: 93%;
+    }
+    .profili{
+        width: 93%;
+    }
+    .col-sm-3{
+    width: 46.33%;
+    }
+    .mainabout{
+        margin-top: 260px;
+    }
+}
+@media screen and (max-width: 62rem) {
+    .swiffy-slider {
+        --swiffy-slider-track-height: 0rem;
+        --swiffy-slider-item-reveal: -17rem;
+        --swiffy-slider-item-count: 2;
+        --swiffy-slider-nav-zoom: .875;
+    }
+    .slider-nav-outside .slider-container, .slider-nav-outside-expand .slider-container {
+        margin: 0px 2rem;
+    }
+    .partners {
+        --swiffy-slider-track-height: 0rem;
+        --swiffy-slider-item-reveal: -15rem;
+        --swiffy-slider-item-count: 3;
+        --swiffy-slider-nav-zoom: 0.875;
+    }
+    .slider-item-ratio-32x9 {
+        --swiffy-slider-item-ratio: 36/9;
+    }
+}
+@media screen and (max-width:600px) {
+    .col-sm-3{
+        width: 45.33%;
+    }
+    .social{
+        width: 55%;
+    }
+}
+@media screen and (max-width:475px) {
+    .col-sm-3{
+        width: 44.33%;
+    }
+}
+@media screen and (max-width:390px) {
+    .stadioni{
+        height: 228px;
+    }
+    .players{
+        width: 25px;
+        height: 25px;
+    }
+    .col-sm-2{
+        padding: 11px 0;
+    }
+    .mtavari{
+        margin-top: 260px;
+        width: 89%;
+    }
+    .stadioni2{
+        width: 302px;
+    }
+    .stadionistavze{
+        font-size: 12px;
+    }
+    .col-sm-3{
+        width: 93%;
+    }
+    .mainabout{
+        width: 86%;
+    }
+}
+@media screen and (max-width:280px) {
+    .h1{
+        font-size: 52px;
+    }
+    .box{
+        width: 200px;
+        height: 45px;
+    }
+    .type{
+        width: 200px;
+        height: 45px;
+    }
+    .main .box .type a p{
+        font-size:14px ;
+    }
+    .mtavari{
+        margin-top: 236px;
+        width: 89%;
+    }
+    .stadioni{
+        height: 164px;
+    }
+    .sxva{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    .stadioni2{
+        width: 224px;
+        height: 134px;
+        margin-top: 17px;
+    }
+    .players{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+    .forwards{
+        padding-top: 20px;
+    }
+    .goalkeeper{
+        margin-bottom: 7px;
+    }
+    .stadionistavze{
+        font-size: 8px;
+    }
+    .profilissurati {
+        height: 58%;
+    }
+    .profili {
+         width: 89%;
+    }
+    .mainabout{
+    width: 83%;
+    }
+    .about pre,span{
+        font-size: 12px;
+    }
+    .social{
+        width: 90%;
+    }
+}
