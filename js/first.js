@@ -1,4 +1,17 @@
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openchat() {
+  document.getElementById("mychat").style.display = "block";
+}
+
+function closechat() {
+  document.getElementById("mychat").style.display = "none";
+}
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {

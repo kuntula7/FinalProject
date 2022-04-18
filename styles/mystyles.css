@@ -40,10 +40,10 @@ nav{
     overflow: hidden;
     position: absolute;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 30px;
-    width: 320px;
+    width: 330px;
     
 }
 .java{
@@ -53,12 +53,16 @@ nav{
 }
 .topnav #myLinks {
     display: none;
+    padding-left: 10px;
+}
+.topnav #myLinks ul li a{
+    font-size: 12px;
 }
 .topnav a{
     color: rgb(5, 5, 5);
     text-decoration: none;
-    font-size: 17px;
     padding: 0px 5px 2px;
+    padding-left: 10px;
     font-weight: bold;
     transition: border-bottom 2s;
 }
@@ -107,11 +111,44 @@ h1{
 form input{
     padding: 5px 2px;
 }
+.search-container{
+    width: 250px;
+}
+.search{   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input1{
+    width: 224px;
+}
 .fa-sign-in{
     color: rgb(3, 3, 3);
 }
 .fa-sign-in:hover{
     color: white;
+}
+/*popup*/
+#formb{
+    background-color: rgba(0, 0, 156, 1);
+    position: relative!important;
+    padding: 0;
+}
+.in2{
+    color: green;
+}
+.formp{
+    top: 16%;
+    left: 41%;
+}
+.login{
+    font-family: beqa;
+    text-align: center;
+}
+.robot2{
+  text-align: center;
+  font-size: 18px;
 }
 .reg{
     width: 32px;
@@ -127,7 +164,7 @@ form input{
     position: fixed;
     right: 0;
     top: 200px;
-    z-index: 80;
+    z-index: 100;
 }
 .fb{
     background-image: url(../img/facebook\ 1.png);
@@ -333,6 +370,118 @@ h2 a:hover{
     background-repeat: no-repeat;
     margin-bottom: 2px;
 }
+/*pop-up*/
+.button{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 2s;
+  }
+  .button:hover{
+    border-bottom: 2px solid black;
+  }
+  /* The popup form - hidden by default */
+  .popup {
+    display: none;
+    position: fixed;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 2s;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    
+  }
+  .form-container input:hover{
+    border-bottom: 2px solid black;
+  }
+#rulesrigths2{
+    width: 100%;
+}
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 2s;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+    
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    border-bottom: 2px solid black;
+  }
+  /*chat*/
+  .chatb{
+    background-color: #ff0404;
+    bottom: 0;
+    right: 0;
+    width: 135px;
+    z-index: 98;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  /* The popup chat - hidden by default */
+  .chatp {
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+  }
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+ 
 
 footer{
     background-color:#9A0000 ;
@@ -348,6 +497,12 @@ footer{
 li:hover a{
     color: white;
     border-bottom: 1px solid black;
+}
+.copy{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
 }
 /*reg.html*/
 .regbody{
@@ -371,9 +526,10 @@ li:hover a{
     width: 50%;
     margin: 3px 125px;
     padding: 5px 10px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     transition: border-bottom 1s linear 0s;
+    outline: none
 }
 #registracia input:hover{
     border-bottom: 2px solid black;
@@ -934,6 +1090,14 @@ iframe{
         padding-left:10px;
     }
 }
+@media screen and (max-width:820px) {
+    .search-container {
+         width: 102px;
+    }
+    .input1 {
+        width: 78px;
+    }
+}
 @media screen and (max-width:768px) {
     .players{
         width: 25px;
@@ -941,6 +1105,9 @@ iframe{
     }
     .col-sm-2{
         padding: 11px 0;
+    }
+    .formp{
+        left: 35%;
     }
 }
 @media screen and (max-width:729px) {
@@ -971,6 +1138,13 @@ iframe{
     }
     .mainabout{
         margin-top: 260px;
+    }
+    .formp{
+       top: 40%;
+       left:33%;
+    }
+    .input1 {
+        width: 120px;
     }
 }
 @media screen and (max-width: 62rem) {
@@ -1018,7 +1192,10 @@ iframe{
         padding: 11px 0;
     }
     .mtavari{
-        margin-top: 260px;
+        margin-top: 276px;
+        width: 89%;
+    }
+    .profili {
         width: 89%;
     }
     .stadioni2{
@@ -1033,6 +1210,45 @@ iframe{
     .mainabout{
         width: 86%;
     }
+    .mshobeli {
+        width: 89%;
+        margin-top: 276px;
+    }
+    .mainabout {
+        margin-top: 274px;
+    }
+    .chatb {
+        width: 70px;
+        height: 31px;
+    }
+    .formp{
+        top:38%;
+        bottom: 212px;
+        left: 78px;
+        width: 226px;
+    }
+    .chatp{
+        top:38%;
+        bottom: 130px;
+        left: 42px;
+        width: 305px;
+    }
+    .fb{
+        top: 290px;
+    }  
+    .inst{
+        top: 310px;
+    }  
+    .twitter{
+        top: 330px;
+    }  
+    .youtube{
+        top: 350px;
+    }  
+    .search-container {
+        width: 144px;
+    }
+
 }
 @media screen and (max-width:280px) {
     .h1{
@@ -1050,8 +1266,8 @@ iframe{
         font-size:14px ;
     }
     .mtavari{
-        margin-top: 236px;
-        width: 89%;
+        margin-top: 277px;
+        width: 86%;
     }
     .stadioni{
         height: 164px;
@@ -1084,7 +1300,7 @@ iframe{
         height: 58%;
     }
     .profili {
-         width: 89%;
+         width: 86%;
     }
     .mainabout{
     width: 83%;
@@ -1094,5 +1310,16 @@ iframe{
     }
     .social{
         width: 90%;
+    }
+    .formp{
+        bottom: 86px;
+        left: 19px;
+        width: 226px;
+    }
+    .chatp{
+        top:40%;
+        bottom: 86px;
+        left: 19px;
+        width: 226px;
     }
 }

@@ -38,6 +38,7 @@
                     <div id="myLinks">
                         <ul>
                          <li><a href="siaxleebi.html">სიახლეები</a></li>
+                         <li><a href="players.html">მოთამაშეები</a></li>
                          <li><a href="contact.html">კონტაქტი</a></li>
                          <li><a href="about.html">ჩვენ შესახებ</a></li>
                         </ul>
@@ -50,7 +51,7 @@
                 </a>
             </h1>
             <div class="search-container">
-                <form action="/action_page.php">
+                <form action="/action_page.php" class="search">
                   <input type="text" placeholder="ძიება.." name="search" class="input1">
                   <button type="submit" class="butt"><i class="fa fa-search"></i></button>
                 </form>
@@ -60,6 +61,20 @@
             <a href="reg2.html" target="_blank">
                 <i class="fa fa-sign-in" aria-hidden="true"></i>
             </a>
+            <button class="button" id="formb" onclick="openForm()">
+                <i class="fa fa-sign-in in2" aria-hidden="true"></i>
+            </button>
+            <div class="popup formp" id="myForm">
+                <form action="/index.html" class="form-container">
+                    <h2 class="login">Login</h2>
+                    <input type="text" name="Name" id="loginname" size="18" placeholder="სახელი"><br><br>
+                    <input type="text" name="password" id="pword"size="18"placeholder="პაროლი"><br><br>
+                    <p for="rules" class="robot2">არ ვარ რობოტი</p>
+                    <input type="checkbox" name="rules" id="rulesrigths2"><br>
+                    <button type="submit" class="btn">შესვლა</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
         </div>
     </header>
     <main>  
@@ -201,10 +216,19 @@
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
+        <button class="button chatb" onclick="openchat()">Chat</button>
+        <div class="popup chatp" id="mychat">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+                <label for="msg"><b>მოგვწერე</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">გაგზავნა</button>
+                <button type="button" class="btn cancel" onclick="closechat()">დახურვა</button>
+            </form>
+        </div>       
     </main>
     <footer>
-    </div>
     <ul class="list-inline">
         <li class="list-inline-item">
             <a href="index.html">მთავარი
@@ -223,11 +247,14 @@
             </a>
         </li>
     </ul>
+    <div class="copy">
     <p class="copyright">Mycareer.ge &#169 2022</p>
-    </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <script src="https://kit.fontawesome.com/f0c795576d.js" crossorigin="anonymous"></script>
     <script src="js/first.js"></script>
+    </footer>
+    
     
     
 </body>
