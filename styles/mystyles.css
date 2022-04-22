@@ -61,8 +61,7 @@ nav{
 .topnav a{
     color: rgb(5, 5, 5);
     text-decoration: none;
-    padding: 0px 5px 2px;
-    padding-left: 10px;
+    padding-bottom: 2px;
     font-weight: bold;
     transition: border-bottom 2s;
 }
@@ -73,6 +72,9 @@ nav{
 .topnav #myLinks ul{
     display: flex;
     flex-direction: row;
+}
+.topnav #myLinks ul li{
+    padding-left: 10px;
 }
 .iconi{
     padding: 0px!important;
@@ -1075,6 +1077,12 @@ iframe{
         width: 140px;
         height: 97px;
     }
+    .search-container {
+        width: 102px;
+   }
+   .input1 {
+       width: 78px;
+   }
 }
 @media screen and (max-width:942px) {
     .mobile-container{
@@ -1137,14 +1145,14 @@ iframe{
     width: 46.33%;
     }
     .mainabout{
-        margin-top: 260px;
+        margin-top: 274px;
     }
     .formp{
        top: 40%;
        left:33%;
     }
     .input1 {
-        width: 120px;
+        width: 210px;
     }
 }
 @media screen and (max-width: 62rem) {
