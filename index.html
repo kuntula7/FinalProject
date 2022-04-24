@@ -21,14 +21,6 @@
 <body>
     <header>
         <nav>
-            <!--
-            <ul>
-                <li><a href="#">მთავარი</a></li>
-                <li><a href="#">სიახლეები</a></li>
-                <li><a href="#">კონტაქტი</a></li>
-                <li><a href="#">ჩვენ შესახებ</a></li>
-            </ul>
-            -->
             <div class="mobile-container">
                 <div class="topnav">
                     <div class="java">
@@ -44,16 +36,16 @@
                         </ul>
                     </div>
                 </div>
-            </div>     
-            <h1>
+            </div>  
                 <a href="index.html" class="h1">
-                    Mycareer.ge
+                    <h1>Mycareer.ge</h1>
                 </a>
-            </h1>
             <div class="search-container">
                 <form action="/action_page.php" class="search">
-                  <input type="text" placeholder="ძიება.." name="search" class="input1">
-                  <button type="submit" class="butt"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="ძიება.." name="search" class="input1">
+                    <button type="submit" class="butt">
+                      <i class="fa fa-search"></i>
+                    </button>
                 </form>
               </div>
         </nav>
@@ -61,20 +53,20 @@
             <a href="reg2.html" target="_blank">
                 <i class="fa fa-sign-in" aria-hidden="true"></i>
             </a>
-            <button class="button" id="formb" onclick="openForm()">
+            <button id="formb" onclick="openForm()">
                 <i class="fa fa-sign-in in2" aria-hidden="true"></i>
             </button>
-            <div class="popup formp" id="myForm">
-                <form action="/index.html" class="form-container">
-                    <h2 class="login">Login</h2>
-                    <input type="text" name="Name" id="loginname" size="18" placeholder="სახელი"><br><br>
-                    <input type="text" name="password" id="pword"size="18"placeholder="პაროლი"><br><br>
-                    <p for="rules" class="robot2">არ ვარ რობოტი</p>
-                    <input type="checkbox" name="rules" id="rulesrigths2"><br>
-                    <button type="submit" class="btn">შესვლა</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-            </div>
+        </div>
+        <div class="popup formp" id="myForm">
+            <form action="/index.html" class="form-container">
+                <h2 class="login">Login</h2>
+                <input type="text" name="Name" id="loginname" size="18" placeholder="სახელი"><br><br>
+                <input type="text" name="password" id="pword"size="18"placeholder="პაროლი"><br><br>
+                <p for="rules" class="robot2">არ ვარ რობოტი</p>
+                <input type="checkbox" name="rules" id="rulesrigths2"><br>
+                <button type="submit" class="btn">შესვლა</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
         </div>
     </header>
     <main>  
@@ -217,8 +209,8 @@
                 </div>
             </div>
         </div>
-        <button class="button chatb" onclick="openchat()">Chat</button>
-        <div class="popup chatp" id="mychat">
+        <button class="button chatb chatbmain" onclick="openchat()">Chat</button>
+        <div class="popup chatp chatpmain" id="mychat">
             <form action="/action_page.php" class="form-container">
                 <h1>Chat</h1>
                 <label for="msg"><b>მოგვწერე</b></label>

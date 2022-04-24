@@ -13,55 +13,55 @@
     <link rel="stylesheet" href="styles/mystyles.css">
     <title>Registration Form</title>
 </head>
-<body class="regbody">
-    <a href="avreg.html" class="ukan">
-        <p>
-            უკან დაბრუნება
-        </p>
-    </a>
-    <form id="registracia" action="/success.html" method="post">
-        
-        <!--<label for="fname">სახელი</label><br>-->
-        <input type="text" name="fname" id="firstname" size="18" placeholder="სახელი" required><br><br>
-       <!-- <label for="lname">გვარი</label><br>-->
-        <input type="text" name="lname" id="lastname"size="18"placeholder="გვარი" required><br><br>
-        <p for="bthday" class="bday">დაბადების თარიღი</p><br>
-        <input type="date" name="bthday" id="birhday" 
-        required ><br><br>
-        <label for="pos" class="position"></label>
-        <select name="pos" id="position" id="selectposition" required>
-            <option value="Blank">Position</option>
-            <option value="Goalkeeper">Goalkeeper</option>
-            <option value="Left-Defender">Left-Defender</option>
-            <option value="Center-Defender">Center-Defender</option>
-            <option value="Right-Defender">Right-Defender</option>
-            <option value="Left-Miedfielder">Left-Miedfielder</option>
-            <option value="Center-Miedfielder">Center-Miedfielder</option>
-            <option value="Right-Miedfielder">Right-Miedfielder</option>
-            <option value="Left-Forward">Left-Forward</option>
-            <option value="Center-Forward">Center-Forward</option>
-            <option value="Right-Forward">Right-Forward</option>
-        </select><br><br>
-        <label for="nat" class="erovneba"></label>
-        <select name="nat" id="nationality" id="selectnationality" required>
-            <option value="Blank">Nationality</option>
-            <option value="Georgia">Georgia</option>
-            <option value="USA">USA</option>
-            <option value="sPAIN">Spain</option>
-            <option value="Germany">Germany</option>
-            <option value="England">England</option>
-            <option value="other">Other</option>
-        </select>
-        <input type="email" name="mail" id="mail"size="18"placeholder="E-Mail" required><br><br>
-        <input type="text" name="password" id="pword"size="18"placeholder="შეიყვანე პაროლი" required><br><br>
-        <input type="text" name="password2" id="pwordagain"size="18"placeholder="გაიმეორე პაროლი" required><br><br>
-        <p for="rules" class="rig">ვეთანხმები წესებსა და პირობებს</p><br>
-        <input type="checkbox" name="rules" id="rules&rigths" required><br>
-        <input type="submit" value="რეგისტრაცია">
-        
-        
-        <!--<input type="text" name="nat" id="nationality"size="18"><br><br>-->
-    </form>
-    
+<body>
+    <div class="mainregbody">
+        <div class="regbody">
+            <a href="avreg.html" class="ukan">
+                <p>
+                    უკან დაბრუნება
+                </p>
+            </a>
+            <form id="registracia" action="/success.html" method="post">
+                
+                <!--<label for="fname">სახელი</label><br>-->
+                <input type="text" name="fname" id="firstname" size="18" placeholder="სახელი" required><br><br>
+                <!-- <label for="lname">გვარი</label><br>-->
+                <input type="text" name="lname" id="lastname"size="18"placeholder="გვარი" required><br><br>
+                <p for="bthday" class="bday">დაბადების თარიღი</p><br>
+                <input type="date" name="bthday" id="birhday" 
+                required ><br><br>
+                <label for="pos" class="position"></label>
+                <select name="pos" id="position" id="selectposition" required>
+                    <option value="Blank">Position</option>
+                    <option value="Goalkeeper">Goalkeeper</option>
+                    <option value="Left-Defender">Left-Defender</option>
+                    <option value="Center-Defender">Center-Defender</option>
+                    <option value="Right-Defender">Right-Defender</option>
+                    <option value="Left-Miedfielder">Left-Miedfielder</option>
+                    <option value="Center-Miedfielder">Center-Miedfielder</option>
+                    <option value="Right-Miedfielder">Right-Miedfielder</option>
+                    <option value="Left-Forward">Left-Forward</option>
+                    <option value="Center-Forward">Center-Forward</option>
+                    <option value="Right-Forward">Right-Forward</option>
+                </select><br><br>
+                <label for="nat" class="erovneba"></label>
+                <select name="nat" id="nationality" id="selectnationality" required>
+                    <option value="Blank">Nationality</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="USA">USA</option>
+                    <option value="sPAIN">Spain</option>
+                    <option value="Germany">Germany</option>
+                    <option value="England">England</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="email" name="mail" id="mail"size="18"placeholder="E-Mail" required><br><br>
+                <input type="text" name="password" id="pword"size="18"placeholder="შეიყვანე პაროლი" required><br><br>
+                <input type="text" name="password2" id="pwordagain"size="18"placeholder="გაიმეორე პაროლი" required><br><br>
+                <p for="rules" class="rig">ვეთანხმები წესებსა და პირობებს</p><br>
+                <input type="checkbox" name="rules" id="rules&rigths" required><br>
+                <input type="submit" value="რეგისტრაცია">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

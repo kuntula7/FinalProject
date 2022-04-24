@@ -21,6 +21,7 @@ header{
     width: 100%;
     border-radius: 0 0 20% 20%;
     scroll-behavior: unset;
+    padding: 0 5px;
 }
 nav{
     width: 90%;
@@ -97,7 +98,7 @@ h1{
     75%{color: rgb(255, 187, 0);}
     100%{color: rgb(0, 0, 0);}
 }
-.h1{
+h1{
     color:black;
     font-size: 64px;
     -webkit-animation-name: animacia;
@@ -124,18 +125,33 @@ form input{
 }
 .input1{
     width: 224px;
+    font-size: 8px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-search{
+    font-size: 12px;
 }
 .fa-sign-in{
     color: rgb(3, 3, 3);
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0)
 }
 .fa-sign-in:hover{
     color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
+
 /*popup*/
 #formb{
     background-color: rgba(0, 0, 156, 1);
-    position: relative!important;
-    padding: 0;
+    position: relative;
+    padding-left:10px;
+    border: none;
+    cursor: pointer;
 }
 .in2{
     color: green;
@@ -239,6 +255,7 @@ main{
     align-items: center;
     flex-direction: column;
     margin-top: 103px;
+    position: relative;
 
 }
 h2 a{
@@ -451,7 +468,8 @@ h2 a:hover{
   }
   /*chat*/
   .chatb{
-    background-color: #ff0404;
+    background-color: white;
+    color: black;
     bottom: 0;
     right: 0;
     width: 135px;
@@ -461,7 +479,11 @@ h2 a:hover{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: background-color 2s;
   }
+  .chatb:hover{
+    background-color: #ff0404;
+    }
   /* The popup chat - hidden by default */
   .chatp {
     bottom: 0;
@@ -507,6 +529,12 @@ li:hover a{
     justify-content: flex-start;  
 }
 /*reg.html*/
+.mainregbody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .regbody{
     display: flex;
     flex-direction: column;
@@ -525,8 +553,7 @@ li:hover a{
     align-items: center;
 }
 #registracia input{
-    width: 50%;
-    margin: 3px 125px;
+    margin: 3px 0;
     padding: 5px 10px;
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -593,19 +620,16 @@ main{
     content: "";
     position: absolute;
     left:0;
+    top: 0;
+    border-radius: 0 0 50% 50%;
     width:100%;
     height:0%;
     background: green;
     ;
-    z-index: 1;
+    z-index: 0;
     transition: 0.8s;
 }
-
-.box1::before{
-    top: 0;
-    border-radius: 0 0 50% 50%;
-}
-.box1:hover::before{
+.box:hover::before{
     height: 180%;
 }
 .box:hover p{
@@ -627,32 +651,33 @@ main{
     content: "";
     position: absolute;
     left:0;
+    top: 0;
+    border-radius: 0 0 50% 50%;
     width:100%;
     height:0%;
     background: green;
-    ;
-    z-index: 1;
+    z-index: 0;
     transition: 0.8s;
 }
-
-.type1::before{
-    top: 0;
-    border-radius: 0 0 50% 50%;
-}
-.type1:hover::before{
+.type:hover::before{
     height: 180%;
     z-index: 1;
 }
-.box:hover .type1{
+.box:hover .type{
     z-index: 100;
 }
 .main .box .type a p{
     color: rgb(3, 3, 3);
     font-size: 24px;
     transition: color 10s;
-    z-index: 100;
+    z-index: 200;
 }
-
+.copy2{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+}
 /*avreg.html*/
 .avtoreg{
     display: flex;
@@ -660,9 +685,13 @@ main{
     justify-content: center;
     align-items: center;
 }
-.avreg{
+#registraciaavtoriacia{
     margin-top: 100px;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 200px;
     border: 2px solid black;
 }
 .avreg ul li{
@@ -772,7 +801,7 @@ main{
 /*siaxleebi.html*/
 .mshobeli{
     width: 94%;
-    background-color: rgb(255, 255, 255);
+    background-color: #a1a193;
     border: 2px solid rgb(18, 11, 117);
     margin-top: 110px;
     display: flex;
@@ -781,8 +810,8 @@ main{
     flex-wrap: wrap;
 
 }
-.col-sm-4{
-    background-color: aliceblue;
+.col-sm-6{
+    background-color: #a1a193;
     width: 610px;
     height: 500px;
     margin: 3px;
@@ -791,23 +820,23 @@ main{
     padding: 7px;
     overflow: hidden;
 }
-.col-sm-4 a{
+.col-sm-6 a{
     color: black;
 }
-.col-sm-4 span{
+.col-sm-6 span{
     color:grey;
 }
-.col-sm-4 .shvili{
+.col-sm-6 .shvili{
     width: 100%;
     height: 100%;
 }
-.col-sm-4 .shvili  .xazi p{
+.col-sm-6 .shvili  .xazi p{
     font-size: 14px;
 }
-.col-sm-4:hover p{
+.col-sm-6:hover p{
     font-weight: bold;
 }
-.col-sm-4 p{
+.col-sm-6 p{
     padding: 7px;
 }
 .shvilishvili{
@@ -822,7 +851,7 @@ main{
     background-repeat: no-repeat;
     transition: background-size 2s;
 }
-.col-sm-4:hover .shvilishvili{
+.col-sm-6:hover .shvilishvili{
     background-size: 110%;
 }
 ::-webkit-scrollbar{
@@ -848,6 +877,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top:5px;
 
 }
 .col-sm-3{
@@ -1059,7 +1089,144 @@ iframe{
 }
 #map {
     height: 500px;
-  }
+}
+/*profile.html*/
+.profili2{
+    width: 95%;
+    background-color: #a1a193;
+    border: 1px solid black;
+    margin-top: 105px;
+}
+.pirv{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px dashed;
+    padding-bottom: 6px;
+}
+.portrait{
+    max-width:300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:10px;
+    padding: 10px;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: #721414;
+}
+.alba2{
+    width: 100%;
+}
+.nawili2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:auto 5px;
+    width: 80%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.opt{
+    background: rgb(5 179 49);
+    margin: 10px;
+    width: 183px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+    border-style: hidden hidden hidden solid;
+
+}
+.opt::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    width:100%;
+    height:0%;
+    background: rgb(254, 255, 254);
+    z-index: 0;
+    transition: 0.8s;
+}
+.opt:hover::before{
+    height: 180%;
+}
+.opt:hover p{
+    color: rgb(3, 3, 3);
+    z-index: 100;
+}
+.opt3{
+    width: 180px;
+    height: 21px;
+    text-align: center;
+    color: rgb(7, 7, 7);
+    position: relative;
+    overflow: hidden;
+}
+.opt:hover .opt3{
+    z-index: 100;
+}
+.options .opt .opt3 a p{
+    color: rgb(3, 3, 3);
+    font-size: 24px;
+    transition: color 10s;
+    z-index: 200;
+}
+.photovideo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.mainphotovideo{
+    position: relative;
+    padding-bottom: 25px;
+    margin-top: 5px;
+}
+.martophoto{
+    border-bottom: 1px dashed black;
+}
+.photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px;
+    overflow: hidden;
+    background-color: black
+}
+.fotovideo{
+    border-radius: 30%;
+    border: 1px solid black;
+    width:100px;
+    background-color: #898282
+}
+.yvelasnaxva{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 8px;
+    border: 1px solid black;
+    border-radius: 3%;
+    padding: 2px;
+    background-color: beige;
+    transition: background-color 2s;
+    margin-bottom: 2px;
+}
+.yvelasnaxva a{
+    color: black;
+    transition:color 2s
+}
+.yvelasnaxva:hover{
+    background-color:black;
+}
+.yvelasnaxva:hover a{
+    color: white;
+}
 @media screen and (max-width:1250px) {
     .main{
         flex-direction: column;
@@ -1106,6 +1273,18 @@ iframe{
         width: 78px;
     }
 }
+@media screen and (max-width:788px) {
+    .pirv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nawili2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:98%;
+    }
+}
 @media screen and (max-width:768px) {
     .players{
         width: 25px;
@@ -1117,9 +1296,17 @@ iframe{
     .formp{
         left: 35%;
     }
+    .topnav #myLinks ul li a {
+        font-size: 16px;
+    }
+    .chatbmain{
+        bottom:300px
+    }
+    .chatpmain{
+        bottom: 371px;
+    }
 }
 @media screen and (max-width:729px) {
-
     nav{
         flex-direction: column;
         margin-top: 5px;
@@ -1130,6 +1317,9 @@ iframe{
     .reg{
         margin-top: 5px;
     }
+    .icon{
+        width: 100%;
+    }
     .newsi{
         margin-top: 270px;
         width: 94%;
@@ -1138,6 +1328,14 @@ iframe{
         margin-top: 260px;
         width: 93%;
     }
+    .main{
+        margin-top:200px;
+        background-position-y: 232px;
+    }
+    .mshobeli {
+        width: 93%;
+        margin-top: 260px;
+    }
     .profili{
         width: 93%;
     }
@@ -1145,7 +1343,7 @@ iframe{
     width: 46.33%;
     }
     .mainabout{
-        margin-top: 274px;
+        margin-top: 260px;
     }
     .formp{
        top: 40%;
@@ -1153,6 +1351,9 @@ iframe{
     }
     .input1 {
         width: 210px;
+    }
+    .profili2 {
+        margin-top:260px ;
     }
 }
 @media screen and (max-width: 62rem) {
@@ -1200,11 +1401,22 @@ iframe{
         padding: 11px 0;
     }
     .mtavari{
-        margin-top: 276px;
+        margin-top: 215px;
         width: 89%;
     }
     .profili {
         width: 89%;
+    }
+    .profili2 {
+         margin-top: 215px;
+         width: 89%;
+    }
+    .opt{
+        width: 103px;
+        height: 15px;
+    }
+    .opt .opt3 p{
+        font-size: 8px;
     }
     .stadioni2{
         width: 302px;
@@ -1220,14 +1432,19 @@ iframe{
     }
     .mshobeli {
         width: 89%;
-        margin-top: 276px;
+        margin-top: 215px;
     }
     .mainabout {
-        margin-top: 274px;
+        margin-top: 215px;
+    }
+    .main{
+        margin-top:200px;
+        background-position-y: center;
     }
     .chatb {
         width: 70px;
         height: 31px;
+        bottom: 16px;
     }
     .formp{
         top:38%;
@@ -1256,12 +1473,17 @@ iframe{
     .search-container {
         width: 144px;
     }
-
+    h1{
+        font-size:42px;
+    }
+    .fotovideo{
+         width:50px;
+    }
+    .yvelasnaxva a p{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width:280px) {
-    .h1{
-        font-size: 52px;
-    }
     .box{
         width: 200px;
         height: 45px;
@@ -1274,7 +1496,6 @@ iframe{
         font-size:14px ;
     }
     .mtavari{
-        margin-top: 277px;
         width: 86%;
     }
     .stadioni{
@@ -1311,7 +1532,7 @@ iframe{
          width: 86%;
     }
     .mainabout{
-    width: 83%;
+         width: 83%;
     }
     .about pre,span{
         font-size: 12px;
@@ -1320,14 +1541,23 @@ iframe{
         width: 90%;
     }
     .formp{
-        bottom: 86px;
-        left: 19px;
+        bottom: 94px;
+        left: 27px;
         width: 226px;
     }
     .chatp{
-        top:40%;
-        bottom: 86px;
-        left: 19px;
+        top: 33%;
+        bottom: 10px;
+        left: 27px;
         width: 226px;
+    }
+    .chatb {
+        bottom: 0;
+    }
+    .nawili2 .agwera p,strong{
+        font-size:8px;
+    }
+    #registracia {
+        padding: 30px 19px;
     }
 }
