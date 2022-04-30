@@ -951,10 +951,10 @@ main{
     align-items: center;
 }
 .profilisnaxva:hover{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .profilissurati:hover a{
-    color: rgba(0, 0, 0, 1);
+    color: rgb(255, 254, 254);
     font-weight: bold;
 }
 .col-sm-3  h2{
