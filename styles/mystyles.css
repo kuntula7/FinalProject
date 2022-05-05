@@ -246,6 +246,9 @@ main{
     flex-direction: column;
     
 }
+.main2{
+    height: 91vh;
+}
 .mtavari{
     width: 95%;
     background-color:#a1a193;
@@ -481,13 +484,6 @@ h2 a:hover{
     border-radius: 50%;
     transition: background-color 2s;
   }
-  .chatb2{
-    bottom: 236px;
-  }
-  .chatb3{
-    bottom: 213px;
-  }
-  
   .chatb:hover{
     background-color: #ff0404;
     }
@@ -1039,12 +1035,19 @@ main{
     border: 2px solid black;
     padding: 10px;
 }
+.main3{
+    height: 91vh;
+}
+
 .partners{
     margin-top: 20px;
 }
 /*contact.html*/
 pre{
     display: inline-block;
+}
+.main4{
+    height: 91vh;
 }
 .address{
     padding-bottom: 2px;
@@ -1128,9 +1131,6 @@ iframe{
 .alba2{
     width: 100%;
 }
-.chatb4{
-    bottom: 39px;
-  }
 .nawili2{
     display: flex;
     justify-content: space-around;
@@ -1310,11 +1310,11 @@ iframe{
     .topnav #myLinks ul li a {
         font-size: 16px;
     }
-    .chatbmain{
-        bottom:300px
+    footer {
+        padding: 4px;
     }
-    .chatpmain{
-        bottom: 371px;
+    .main2 {
+        height: 91vh;
     }
 }
 @media screen and (max-width:729px) {
@@ -1399,8 +1399,17 @@ iframe{
     .col-sm-3{
         width: 44.33%;
     }
+    .main3{
+        height: 106vh
+    }
+    .main4{
+        height: 112vh
+    }
 }
 @media screen and (max-width:390px) {
+    .main2 {
+        height: 89vh;
+    }   
     .stadioni{
         height: 228px;
     }
@@ -1441,6 +1450,7 @@ iframe{
     .mainabout{
         width: 86%;
     }
+    
     .mshobeli {
         width: 89%;
         margin-top: 215px;
@@ -1451,6 +1461,7 @@ iframe{
     .main{
         margin-top:200px;
         background-position-y: center;
+        
     }
     .chatb {
         width: 70px;
@@ -1498,6 +1509,15 @@ iframe{
     .box{
         width: 200px;
         height: 45px;
+    }
+    .main3{
+        height: 164vh
+    }
+    .main4{
+        height: 142vh
+    }
+    .main2 {
+        height: 103vh;
     }
     .type{
         width: 200px;
