@@ -158,7 +158,7 @@ form input{
 }
 .formp{
     top: 16%;
-    left: 41%;
+    left: 44%;
 }
 .login{
     font-family: beqa;
@@ -251,7 +251,7 @@ main{
     background-color:#a1a193;
     border: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     margin-top: 103px;
@@ -308,7 +308,7 @@ h2 a:hover{
 }
 .stadioni{
     width: 100%;
-    height: 250px;
+    height: 533px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -319,8 +319,8 @@ h2 a:hover{
     border: 2px solid black;
 }
 .stadioni2{
-    width: 300px;
-    height: 181px;
+    width: 800px;
+    height: 485px;
     background-image: url(../img/field.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -480,12 +480,6 @@ h2 a:hover{
     align-items: center;
     border-radius: 50%;
     transition: background-color 2s;
-  }
-  .chatb2{
-    bottom: 236px;
-  }
-  .chatb3{
-    bottom: 213px;
   }
   
   .chatb:hover{
@@ -1028,7 +1022,8 @@ main{
 /*about.html*/
 .mainabout{
     width: 89%;
-    margin-top: 121px;
+    height: 100vh;
+    margin-top: 39px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1103,6 +1098,7 @@ iframe{
     background-color: #a1a193;
     border: 1px solid black;
     margin-top: 105px;
+    height: 100vh;
 }
 .pirv{
     display: flex;
@@ -1205,10 +1201,17 @@ iframe{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin: 5px 0px;
     overflow: hidden;
     background-color: black
+}
+.erti{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-around
 }
 .fotovideo{
     border-radius: 30%;
@@ -1297,10 +1300,7 @@ iframe{
     }
 }
 @media screen and (max-width:768px) {
-    .players{
-        width: 25px;
-        height: 25px;
-    }
+    
     .col-sm-2{
         padding: 11px 0;
     }
@@ -1315,6 +1315,14 @@ iframe{
     }
     .chatpmain{
         bottom: 371px;
+    }
+    .stadioni2 {
+        width: 684px;
+        height: 413px;
+        margin-top: 61px;
+    }
+    .profili2 {
+        height: 103vh;
     }
 }
 @media screen and (max-width:729px) {
@@ -1421,6 +1429,7 @@ iframe{
     .profili2 {
          margin-top: 215px;
          width: 89%;
+         height: 97vh;
     }
     .opt{
         width: 103px;
@@ -1431,6 +1440,8 @@ iframe{
     }
     .stadioni2{
         width: 302px;
+        height: 185px;
+        margin-top: 32px;
     }
     .stadionistavze{
         font-size: 12px;
@@ -1440,12 +1451,11 @@ iframe{
     }
     .mainabout{
         width: 86%;
+        margin-top: 224px;
+        height: 84vh;
     }
     .mshobeli {
         width: 89%;
-        margin-top: 215px;
-    }
-    .mainabout {
         margin-top: 215px;
     }
     .main{
@@ -1493,6 +1503,7 @@ iframe{
     .yvelasnaxva a p{
         font-size: 12px;
     }
+
 }
 @media screen and (max-width:280px) {
     .box{
@@ -1542,8 +1553,18 @@ iframe{
     .profili {
          width: 86%;
     }
+    .profili2 {
+        height: 108vh;
+   }
     .mainabout{
          width: 83%;
+         margin-top: 216px;
+         height: 127vh;
+    }
+    .contact{
+        width: 83%;
+         margin-top: 217px;
+         height: 108vh;
     }
     .about pre,span{
         font-size: 12px;
