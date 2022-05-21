@@ -247,7 +247,7 @@ main{
     
 }
 .main2{
-    height: 91vh;
+    height: 100vh;
 }
 .mtavari{
     width: 95%;
@@ -1026,7 +1026,7 @@ main{
 .mainabout{
     width: 89%;
     height: 100vh;
-    margin-top: 39px;
+    margin-top: 89px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1468,7 +1468,7 @@ iframe{
     .mainabout{
         width: 86%;
         margin-top: 224px;
-        height: 84vh;
+        height: 94vh;
     }
     
     .mshobeli {
@@ -1521,6 +1521,9 @@ iframe{
     .yvelasnaxva a p{
         font-size: 12px;
     }
+    .contact{
+         margin-top: 212px;
+    }
 
 }
 @media screen and (max-width:280px) {
@@ -1529,10 +1532,10 @@ iframe{
         height: 45px;
     }
     .main3{
-        height: 164vh
+        height: 162vh;
     }
     .main4{
-        height: 142vh
+        height: 142vh;
     }
     .main2 {
         height: 103vh;
